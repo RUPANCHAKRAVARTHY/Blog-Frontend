@@ -5,9 +5,10 @@ import SkeletonStory from "../Skeletons/SkeletonStory";
 import CardStory from "../StoryScreens/CardStory";
 import NoStories from "../StoryScreens/NoStories";
 
+
 import "../../Css/Home.css";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Home = () => {
   const [stories, setStories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,9 +39,13 @@ const Home = () => {
     };
     getStories();
   }, [setLoading]);
+  const handleBlog =()=>{
+    navigate("/addstory")
+  }
 
   return (
     <div className="Inclusive-home-page">
+        <button onClick={handleBlog}>Create Blog</button>
       {loading ? (
         <div className="skeleton_emp">
           {[...Array(6)].map(() => {
@@ -50,6 +55,7 @@ const Home = () => {
             );
           })}
         </div>
+        
       ) : (
         <div>
           <div className="story-card-wrapper">
@@ -60,6 +66,7 @@ const Home = () => {
             ) : (
               <NoStories />
             )}
+            
           </div>
         </div>
       )}
