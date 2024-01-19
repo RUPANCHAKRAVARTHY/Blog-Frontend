@@ -72,6 +72,8 @@ const LoginScreen = () => {
               <label htmlFor="password">Password</label>
             </div>
             <button type="submit">Login</button>
+            <p>For admin login use /admin/login as the endpoint and the demo credentials will be</p><br></br>
+            <p>email:rupan@guvi.in password:123456</p>
           </form>
         </div>
       </div>
