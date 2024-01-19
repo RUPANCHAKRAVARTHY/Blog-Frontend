@@ -23,7 +23,7 @@ const RegisterScreen = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:5000/user/register", {
+      const { data } = await axios.post("https://blogapp-5mbw.onrender.com/user/register", {
         username,
         email,
         password,

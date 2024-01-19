@@ -12,7 +12,7 @@ const AdminScreen = () => {
     e.preventDefault();
 
     try {
-      const { data } = await axios.post("http://localhost:5000/user/login", {
+      const { data } = await axios.post("https://blogapp-5mbw.onrender.com/user/login", {
         email,
         password,
       });

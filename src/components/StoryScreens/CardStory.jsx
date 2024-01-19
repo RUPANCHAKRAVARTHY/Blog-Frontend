@@ -33,7 +33,7 @@ const Story = ({ story }) => {
           };
   
           const { data } = await axios.put(
-            `http://localhost:5000/admin/approve-blog/${id}`,{},
+            `https://blogapp-5mbw.onrender.com/admin/approve-blog/${id}`,{},
             config
           );
             console.log(data);

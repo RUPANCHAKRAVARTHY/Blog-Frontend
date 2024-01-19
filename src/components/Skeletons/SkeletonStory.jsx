@@ -1,5 +1,5 @@
 import React from 'react'
-import Shimmer from './Shimmer';
+
 import SkeletonElement from './SkeletonElement'
 
 const  SkeletonStory =({theme}) =>  {
@@ -16,7 +16,7 @@ const  SkeletonStory =({theme}) =>  {
             <SkeletonElement type="text"/>
             <SkeletonElement type="text"/>
         </div>
-        <Shimmer/>
+    
     </div>
     
   )

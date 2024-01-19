@@ -25,7 +25,7 @@ const Home = () => {
         };
 
         const { data } = await axios.get(
-          "http://localhost:5000/user/getAll-blog",
+          "https://blogapp-5mbw.onrender.com/user/getAll-blog",
           config
         );
 

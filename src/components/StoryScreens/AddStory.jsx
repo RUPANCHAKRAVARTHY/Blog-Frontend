@@ -34,7 +34,7 @@ const AddStory = () => {
         },
       };
       const data = await axios.post(
-        "http://localhost:5000/user/create-blog",
+        "https://blogapp-5mbw.onrender.com/user/create-blog",
         formdata,
         config
       );

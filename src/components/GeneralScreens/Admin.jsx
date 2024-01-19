@@ -23,7 +23,7 @@ const Admin = () => {
         };
 
         const { data } = await axios.get(
-          "http://localhost:5000/admin/unapproved-blogs",
+          "https://blogapp-5mbw.onrender.com/admin/unapproved-blogs",
           config
         );
 
